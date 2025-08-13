@@ -6,12 +6,13 @@ const ListRender = () => {
     const [users, setUsers] = useState([
         { id: 1, name: "Patrick", age: 23 },
         { id: 2, name: "Pedro", age: 26 },
-        { id: 3, name: "Lucas", age: 20 }
+        { id: 3, name: "Lucas", age: 20 },
+        { id: 4, name: "Matheus", age: 30 }
     ]);
 
-    const deleteRandom = () =>{
+    const deleteRandom = () => {
 
-        const randomNumber = Math.floor (Math.random() * 4)
+        const randomNumber = Math.floor(Math.random() * 5)
 
         setUsers((prevUsers) => prevUsers.filter((user) => randomNumber !== user.id));
 
