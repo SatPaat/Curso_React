@@ -2,10 +2,14 @@ import './App.css'
 
 // 2 - css de componente
 import MyComponent from './components/MyComponent'
+import Title from './components/Title'
 
 function App() {
   // 4 -css inline dinâmico
   const n = 15
+
+  // 5 - classes dinâmicas
+  const redTitle = true
 
   return (
     <div className="App">
@@ -25,6 +29,12 @@ function App() {
       <h2 style={n > 20 ? { color: "purple" } : { color: "magenta" }}>
         Css dinâmico 2
       </h2>
+      {/* 5 - Classes dinâmicas */}
+      <h2 className={redTitle ? "red-title" : "title"}>
+        Este título vai ter uma classe
+      </h2>
+      {/* 6 - css modules */}
+      <Title />
     </div>
   )
 }
