@@ -19,6 +19,11 @@
       "id": "6206",
       "name": "notebook",
       "price": "2.500"
+    },
+    {
+      "id": "60a5",
+      "name": "testando ",
+      "price": "20"
     }
   ]
 }
