@@ -5,13 +5,17 @@ import App from './App.jsx'
 
 import Contact from './routes/Contact.jsx'
 
-// 2 - página de erro
+// 2 - pagina de erro
 import ErrorPage from './routes/ErrorPage.jsx'
 
 // 1 - configurando router
-import { createBrowserRouter, RouterProvider, Route} from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route
+} from "react-router-dom";
 
-// 3 - componente base
+// 3 - componente base 
 import Home from './routes/Home.jsx'
 
 const router = createBrowserRouter([
@@ -22,20 +26,20 @@ const router = createBrowserRouter([
     // 3 - componente base
     children: [
       {
-        path:"/",
+        path: "/",
         element: <Home />
       },
       {
         path: "contact",
-        element: <Contact />,
-      }
+        element: <Contact />
+      },
     ]
   },
-//   {
-//     path: "contact",
-//     element: <Contact />
-//   }
-]);
+  // {
+  //   path: "contact",
+  //   element: <Contact />,
+  // }
+])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
