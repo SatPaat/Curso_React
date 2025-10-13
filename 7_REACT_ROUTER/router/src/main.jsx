@@ -18,6 +18,9 @@ import {
 // 3 - componente base 
 import Home from './routes/Home.jsx'
 
+// 7 - rota dinamica
+import Products from './routes/Products.jsx'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +36,11 @@ const router = createBrowserRouter([
         path: "contact",
         element: <Contact />
       },
+      //  7 - rota dinamica
+      {
+        path: "products/:id",
+        element: <Products />,
+      }
     ]
   },
   // {
