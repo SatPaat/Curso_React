@@ -9,10 +9,7 @@ const url = "http://localhost:3000/products";
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-
   const {data: items} = useFetch(url)
-
-
 
   return (
     <div>
