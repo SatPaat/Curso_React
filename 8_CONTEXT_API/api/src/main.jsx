@@ -6,6 +6,7 @@ import App from './App.jsx'
 import Home from './routes/Home.jsx';
 import Contact from './routes/Contact.jsx';
 
+
 // 2 - Provider
 import { CounterContextProvider } from './context/CounterContext.jsx';
 
