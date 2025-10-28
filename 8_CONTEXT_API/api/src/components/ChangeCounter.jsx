@@ -2,8 +2,11 @@ import { useContext } from "react"
 
 import { CounterContext } from "../context/CounterContext"
 
-const ChangeContext = () => {
-    const{counter, setCounter} = useContext(CounterContext);
+// 4 - refatorando com hook
+import { useCounterContext } from "../hooks/useCounterContext";
+
+const ChangeCounter = () => {
+    const{counter, setCounter} = useCounterContext();
 
   return (
     <div>
@@ -12,4 +15,4 @@ const ChangeContext = () => {
   )
 }
 
-export default ChangeContext
+export default ChangeCounter
