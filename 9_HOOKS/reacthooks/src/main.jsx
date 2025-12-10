@@ -12,6 +12,8 @@ import {
   Navigate
 } from "react-router-dom";
 
+import {HookUseContext} from './components/HookUseContext.jsx'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +34,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <RouterProvider router={router} />
+    <HookUseContext>
+        <RouterProvider router={router} />
+    </HookUseContext>
+    
   </StrictMode>,
 )
