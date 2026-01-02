@@ -29,14 +29,14 @@ const HookUseEffect = () => {
 
   },[anotherNumber]);
 
-  // 4 - cleanup do useEffect
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      console.log("Hello World")
-      setAnotherNumber(anotherNumber + 1)
-    }, 2000)
-    return() => clearTimeout(timer);
-  }, [anotherNumber])
+  // // 4 - cleanup do useEffect
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     console.log("Hello World")
+  //     setAnotherNumber(anotherNumber + 1)
+  //   }, 2000)
+  //   return() => clearTimeout(timer);
+  // }, [anotherNumber])
 
  
   return (
