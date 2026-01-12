@@ -1,7 +1,7 @@
 import { forwardRef, useRef, useImperativeHandle } from "react"
 
 const SomeComponent = forwardRef((props, ref) => {
-
+  
     const localInputRef = useRef()
 
     useImperativeHandle(ref, () => {
